@@ -22,9 +22,15 @@
         <div class="card-img-container">
           <img >
         </div>
-        <h2 class="card-title">{{ item.name }}</h2>
-          <p>A {{ item.sort }} year old {{ item.brand }}</p>
-          <p>A {{ item.store }} kitten.</p>
+        <h1 class="card-title">{{ item.name }}</h1>
+        <div>
+          <h3>Sort:</h3>
+          <p>{{ item.sort }}</p>
+          <h3>Brand:</h3>
+          <p>{{ item.brand }}</p>
+          <h3>Store:</h3>
+          <p>{{ item.store }}</p>
+        </div>
       </div>
     </div>
   {% endfor %}
