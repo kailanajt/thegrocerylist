@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link 
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'css/items/items-index.css' %}"
+/>
+{% endblock %}
+
+{% block content %}
+
+
+  <h1>Grocery List</h1>
+
+
+<section class="card-container">
+  {% for item in items %}
+    <div class="card">
+      <div class="card-content">
+        <div class="card-img-container">
+          <img >
+        </div>
+        <h2 class="card-title">{{ item.name }}</h2>
+          <p>A {{ item.sort }} year old {{ item.brand }}</p>
+          <p>A {{ item.store }} kitten.</p>
+      </div>
+    </div>
+  {% endfor %}
+</section>
+
+{% endblock %}
