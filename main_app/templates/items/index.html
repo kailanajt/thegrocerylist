@@ -16,23 +16,25 @@
 
 
 <section class="card-container">
+  <a href="/items/{{ item.id }}"></a>
   {% for item in items %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-img-container">
-          <img >
-        </div>
-        <h1 class="card-title">{{ item.name }}</h1>
-        <div>
-          <h3>Sort:</h3>
-          <p>{{ item.sort }}</p>
-          <h3>Brand:</h3>
-          <p>{{ item.brand }}</p>
-          <h3>Store:</h3>
-          <p>{{ item.store }}</p>
+        <div class="card-content">
+          <div class="card-img-container">
+            <img >
+          </div>
+          <h1 class="card-title">{{ item.name }}</h1>
+          <div>
+            <h3>Sort:</h3>
+            <p>{{ item.sort }}</p>
+            <h3>Brand:</h3>
+            <p>{{ item.brand }}</p>
+            <h3>Store:</h3>
+            <p>{{ item.store }}</p>
+          </div>
         </div>
       </div>
-    </div>
+    </a>
   {% endfor %}
 </section>
 
