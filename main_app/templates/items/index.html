@@ -32,6 +32,10 @@
             <h3>Store:</h3>
             <p>{{ item.store }}</p>
           </div>
+          <div class = 'item-actions'>
+              <a href="{% url 'items_update' item.id %}">Edit</a>
+              <a href="{% url 'items_delete' item.id %}">Delete</a>
+          </div>
         </div>
       </div>
     </a>
