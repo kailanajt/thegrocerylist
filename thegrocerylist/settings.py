@@ -16,6 +16,7 @@ env('SECRET_KEY')
 
 from pathlib import Path
 import os
+#import django_heroku
 
 
 
@@ -130,6 +131,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+
 LOGIN_URL = 'home'
 
 LOGIN_REDIRECT_URL = 'items_index'
@@ -141,5 +143,5 @@ LOGOUT_REDIRECT_URL = 'home'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#import django_heroku
+
 #django_heroku.settings(locals())
