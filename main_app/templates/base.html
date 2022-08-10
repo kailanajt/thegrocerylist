@@ -16,10 +16,16 @@
     <header>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
+          {% if user.is_authenticated%}
           <li><a href="{% url 'about' %}">About</a></li>
           <li><a href="{% url 'items_index' %}">All Items</a></li>
           <li><a href="{% url 'items_create' %}">Add An Item</a></li>
+          <li><a href="{% url 'logout' %}">Log out</a></li>
+          {% else %}
+          <li><a href="{% url 'about' %}">About</a></li>
+          <li><a href="{% url 'home' %}">Login</a></li>
+          <li><a href="{% url 'signup' %}">Sign Up</a></li>
+          {% endif %}
         </ul>
       </nav>
     </header>

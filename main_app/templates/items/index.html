@@ -15,13 +15,13 @@
   <h1>Grocery List</h1>
 
 
-<section class="card-container">
-  <a href="/items/{{ item.id }}"></a>
-  {% for item in items %}
+  <section class="card-container">
+    {% for item in items %}
+    <a href="/items/{{ item.id }}">
+  
     <div class="card">
         <div class="card-content">
           <div class="card-img-container">
-            <img >
           </div>
           <h1 class="card-title">{{ item.name }}</h1>
           <div>
@@ -32,14 +32,14 @@
             <h3>Store:</h3>
             <p>{{ item.store }}</p>
           </div>
+        </a>
           <div class = 'item-actions'>
-              <a href="{% url 'items_update' item.id %}">Edit</a>
-              <a href="{% url 'items_delete' item.id %}">Delete</a>
+            <a href="{% url 'items_update' item.id %}">Edit</a>
+            <a href="{% url 'items_delete' item.id %}">Delete</a>
           </div>
         </div>
       </div>
-    </a>
-  {% endfor %}
+    {% endfor %}
 </section>
 
 {% endblock %}

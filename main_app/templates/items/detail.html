@@ -25,6 +25,10 @@
             <h3>Store:</h3>
             <p>{{ item.store }}</p>
           </div>
+          <div class = 'item-actions'>
+            {% comment %} <a href="{% url 'items_update' item.id %}">Edit</a> {% endcomment %}
+            {% comment %} <a href="{% url 'items_delete' item.id %}">Delete</a> {% endcomment %}
+          </div>
   </div>
 </section>
 
