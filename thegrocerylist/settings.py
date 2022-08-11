@@ -16,7 +16,7 @@ env('SECRET_KEY')
 
 from pathlib import Path
 import os
-#import django_heroku
+import django_heroku
 
 
 
@@ -144,4 +144,4 @@ LOGOUT_REDIRECT_URL = 'home'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-#django_on_heroku.settings(locals())
+django_heroku.settings(locals())
