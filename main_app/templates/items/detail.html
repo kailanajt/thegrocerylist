@@ -18,16 +18,12 @@
   <div class="item-details">
     <h1 class="card-title">{{ item.name }}</h1>
           <div>
-            <h3>Sort:</h3>
+            <h3>SORT:</h3>
             <p>{{ item.sort }}</p>
-            <h3>Brand:</h3>
+            <h3>BRAND:</h3>
             <p>{{ item.brand }}</p>
-            <h3>Store:</h3>
+            <h3>STORE:</h3>
             <p>{{ item.store }}</p>
-          </div>
-          <div class = 'item-actions'>
-            {% comment %} <a href="{% url 'items_update' item.id %}">Edit</a> {% endcomment %}
-            {% comment %} <a href="{% url 'items_delete' item.id %}">Delete</a> {% endcomment %}
           </div>
   </div>
 </section>

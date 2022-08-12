@@ -12,9 +12,7 @@
 {% block content %}
 
 
-  <h1>Grocery List</h1>
-
-
+  <h1 class='grocery-list'>Grocery List</h1>
   <section class="card-container">
     {% for item in items %}
     <a href="/items/{{ item.id }}">
@@ -25,17 +23,17 @@
           </div>
           <h1 class="card-title">{{ item.name }}</h1>
           <div>
-            <h3>Sort:</h3>
+            <h3>SORT:</h3>
             <p>{{ item.sort }}</p>
-            <h3>Brand:</h3>
+            <h3>BRAND:</h3>
             <p>{{ item.brand }}</p>
-            <h3>Store:</h3>
+            <h3>STORE:</h3>
             <p>{{ item.store }}</p>
           </div>
         </a>
           <div class = 'item-actions'>
-            <a href="{% url 'items_update' item.id %}">Edit</a>
-            <a href="{% url 'items_delete' item.id %}">Delete</a>
+            <a href="{% url 'items_update' item.id %}" class = 'item-actions-one'>Edit</a>
+            <a href="{% url 'items_delete' item.id %}" class = 'item-actions-two'>Delete</a>
           </div>
         </div>
       </div>
