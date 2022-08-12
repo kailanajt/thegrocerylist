@@ -1,6 +1,6 @@
 # The Grocery List
 
-[The Grocery List](https://thegrocerystore.herokuapp.com/) was brought to you by someone who buys the same products over and over again, but still needs to write down a list or they will forget. Explore my final project at General Assembly, brought you by Django and Python.
+[The Grocery List](https://thegrocerystore.herokuapp.com/) was brought to you by someone who buys the same products over and over again, but still needs to write down a list everytime or they will forget. Explore my final project at General Assembly, brought you by Django and Python.
 
 [Trello](https://trello.com/b/XuSg4GCD/the-grocery-list#)
 ![Main View](main_app/static/images/index.png)
