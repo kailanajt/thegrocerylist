@@ -93,11 +93,7 @@ nav li {
   max-width: 500px;
 }
 
-.page-header {
-  display: flex;
-  align-items: center;
-  margin: 20px;
-}
+
 
 .btn {
   font-size: var(--font-l);
@@ -142,10 +138,6 @@ nav li {
   margin: 0;
 }
 
-.page-header img {
-  height: 40px;
-  margin-left:15px;
-}
 
 .page-header img:first-of-type {
   margin-left: 20px;
@@ -203,9 +195,7 @@ nav li {
     margin-left:20px;
   }
   
-  .page-header img:first-of-type {
-    margin-left: 25px;
-  }
+ 
 
   @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     header {
